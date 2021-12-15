@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap");
+
+:root {
+  --cor0: #68e9b5;
+  --cor1: #20e595;
+  --cor2: #19b274;
+  --cor3: #0e6542;
+  --cor4: #2d654e;
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header h1 {
+  font-size: 3em;
+  padding-top: 40px;
+  margin: 0px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+}
+
+header p {
+  color: var(--cor0);
+  padding: 20px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+}
+
+#cabecalho {
+  font-family: "Roboto Mono", monospace;
+  background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+  text-align: center;
+  color: white;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#menu {
+  padding: 10px;
+  align-items: center;
+}
+
+#menu a {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 10px;
+  transition-duration: 0.7s;
+}
+
+#menu > a:hover {
+  color: var(--cor0);
+}
+
+body {
+  background-color: var(--cor0);
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
+
+a.externo::after {
+  content: "\1F517";
+  font-size: 0.8em;
+}
+
+main {
+  min-width: 250px;
+  max-width: 800px;
+  margin: 0px auto 30px auto;
+  padding: 5px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: justify;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1,
+h2,
+h3 {
+  padding: 10px;
+}
+
+main p {
+  text-indent: 2em;
+  line-height: 1.5em;
+  padding: 5px;
+}
+
+main img {
+  width: 100%;
+}
+
+main a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor1);
+  font-style: italic;
+}
+
+main a:hover {
+  text-decoration: underline;
+  background-color: var(--cor1);
+  color: white;
+}
+
+main strong {
+  color: var(--cor3);
+}
+
+#bugdroid {
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+div.video {
+  background-color: black;
+  margin: 0px -5px 30px -5px;
+  padding: 20px;
+  padding-bottom: 55%;
+  position: relative;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+aside {
+  background-color: #68e9b575;
+  padding: 5px;
+  margin: 25px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.349);
+}
+
+aside h3 {
+  background-color: var(--cor4);
+  color: white;
+  padding: 10px;
+  margin: -5px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+aside p {
+  margin: 10px;
+}
+
+aside ul {
+  list-style-type: "\2714\00A0";
+  list-style-position: inside;
+  columns: 2;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: var(--cor4);
+}
+
+footer a {
+  color: var(--cor0);
+  text-decoration: none;
+}
