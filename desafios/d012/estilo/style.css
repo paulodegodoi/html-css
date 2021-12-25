@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container1 {
+  position: relative;
+  height: 200px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+#titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#titulo h1 {
+  font-size: 3em;
+  padding: 10px;
+}
